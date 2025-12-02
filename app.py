@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def hello():
-    return "Hello DevOps from Péter!"
+    return "Hello DevOps from GDE student Péter!"
 
 if __name__ == "__main__":
     # Itt indul el a web szerver
