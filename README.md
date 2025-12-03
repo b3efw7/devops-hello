@@ -87,3 +87,18 @@ http://127.0.0.1:8080 vagy http://localhost:8080
 
 ---
 
+## 4. CI pipeline és container registry
+
+A repóban található `.github/workflows/ci.yml` fájl egy GitHub Actions pipeline-t definiál.
+
+A pipeline:
+- minden `main` branchre történő *push* és *pull request* esetén lefut,
+- buildeli a Docker image-et a projekt `Dockerfile` alapján,
+- és feltölti a GitHub Container Registry-be (GHCR) az alábbi néven:
+
+```text
+ghcr.io/<github-b3efw7>/devops-hello:latest
+
+
+---
+
