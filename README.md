@@ -97,8 +97,19 @@ A pipeline:
 - és feltölti a GitHub Container Registry-be (GHCR) az alábbi néven:
 
 ```text
-ghcr.io/<github-b3efw7>/devops-hello:latest
+ghcr.io/b3efw7/devops-hello:latest
+```
+Ahol b3efw7 a GitHub felhasználónevem.
 
+Példa a registry-ből való futtatásra olyan gépen, ahol a Docker elérhető:
+
+```bash
+docker pull ghcr.io/b3efw7/devops-hello:latest
+docker run -p 8080:8080 ghcr.io/b3efw7/devops-hello:latest
+```
 
 ---
+
+
+
 
